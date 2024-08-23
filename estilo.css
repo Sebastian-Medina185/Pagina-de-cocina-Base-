@@ -1,0 +1,139 @@
+body {
+    /* background-color: rgb(137, 233, 73); */
+    font-family: cursive;
+    font-weight: 300;
+    max-width: 900px;
+    margin: 0 auto;
+}
+nav {
+    width: 100%;
+    height: 167px;
+    background-color: rgb(235, 180, 78, 0.883); /* el ultimo es la transparencia */
+}
+nav ul li {
+    list-style-type: none; /* Quitar viñetas */
+    display: inline-block; /* Cada opcion se ve una al lado de la otra */
+
+    transition: 0.8s all; /* Tiempo de movimiento con mouse encima*/
+    padding: 18px 20px;
+}
+
+nav ul li:hover {
+    background-color: #fff;
+}
+
+nav ul li a {
+    /* Agregar estilos a los hipervinculos */
+    text-decoration: none; /* Quitar la linea de los hipervinculos */
+    color: #000000;
+}
+
+a:visited {
+    /* Cuando es visitado cambia a este color */
+    color: #140b0b;
+}
+
+a:active {
+    /* Cuando se da click en el enlace se cambia a este color*/ 
+    color: #e26f0e;
+}
+
+/* Esrilizamos el logo */
+.img-logo {
+    width: 100px;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+nav ul {
+    padding-top: 90px; /* Para que el menu baje un poco de arriba hacia abajo */ 
+    float: right; /* Ubica los elementos del menu de manera flotante a la derecha*/
+
+    /* volver al inex y decomentar el logo principal */
+}
+
+.banner {
+    max-width: 100%;   /* Para que se ajuste el tamaño del body */ 
+}
+
+.featured {
+    background-color: rgba(240,193,107,0.616);
+}
+
+/* se estiliza el video */
+.fp-video {
+    width: 55%;
+    padding: 2em;
+    overflow-y: visible;
+}
+
+/* Estilizar el article featured (el parrafo */
+.ft-articulo {
+    width: 30%;
+    padding: 2em;
+    vertical-align: top;
+}
+
+/* Estilo general para odos los articulos */
+article {
+    padding: 30px;
+    background-color: rgba(240, 220, 107, 0.582);
+    margin: 20px; /* Opcional, para separar los elementos de article */
+}
+
+article h1 {
+    border-bottom: solid thin black; /* Subrayar el titulo del h1 "Recetas del mundo" */ 
+}
+
+/* Hacer que el article aparezca al lado dl video */
+.fp-video,
+.ft-articulo {
+    /* Ambos en linea y en el bloque*/
+    display: inline-block;
+}
+
+/* Se estiliza el boton*/
+.boton-container {
+    text-align: center;
+    background-color: #e26f0e;
+    /* Centrase en el article*/
+    margin: 0 auto;
+}
+
+.boton-container a {
+    text-decoration: none; /* Ningun adorno al boton */
+    color: #fff;
+}
+
+.boton {
+    padding: 15px; /* Boton mas ancho*/
+}
+
+/* Animacion al boton */
+.boton-container :hover {
+    background-color: darkcyan;
+}
+
+/* Se estiliza la primer imagen */
+.art-image img {
+    max-width: 100%;
+    margin: 0;
+}
+
+.art-cont {
+    width: 740px;
+    vertical-align: top;
+}
+
+h2 {
+    margin: 0;
+    border-bottom: solid thin black;
+}
+
+footer {
+    background-color: rgba(235,180,75,0.883);
+    color: rgb(31,12,134);
+    clear: both; /* Linea para cargar y limpiar elementos no flotantes, ojo que hay que ponerla*/
+    line-height: 30px;
+    text-align: center;
+    padding: 25px;
+}
